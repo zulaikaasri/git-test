@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+
+<body>
+<p id="listbuah">Buah-buahan kegemaran saya ialah: </p>
+
+
+<script>
+  var i=0;
+  var buah=new Array();
+  var list ="Buah-buahan kegemaran saya ialah :<ol>";
+
+  var a=parseInt(prompt("Masukkan bilangan buah-buahan kegemaran anda"));
+  
+  for(i=0; i<a; i++){
+  buah[i]=prompt("Masukkan buah "+(i+1+": "));
+  
+  list+="<li>" +buah[i];
+  }
+ 
+ list+="</ul>";
+ document.getElementById("listbuah").innerHTML=list;
+
+
+
+</script>
+</body>
+</html>
